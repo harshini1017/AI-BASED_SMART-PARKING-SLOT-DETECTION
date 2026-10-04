@@ -1,0 +1,22 @@
+/* SlotGrid2D.css */
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.slot {
+  padding: 15px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  color: #222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slot:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}

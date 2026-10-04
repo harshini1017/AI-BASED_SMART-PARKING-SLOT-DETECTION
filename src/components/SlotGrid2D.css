@@ -1,0 +1,31 @@
+/* SlotGrid2D.css */
+
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 12px;
+  justify-items: center;
+  margin: 20px auto;
+  max-width: 700px;
+}
+
+.slot-box {
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #222;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.slot-box:hover {
+  transform: translateY(-4px);
+}
+
+.slot-label {
+  font-size: 14px;
+}
